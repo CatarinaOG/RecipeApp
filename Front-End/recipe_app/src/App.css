@@ -1,0 +1,125 @@
+body{
+    background-color:#e5e7ed ;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+
+.LeftSide{
+    width: 50vw;
+    height:80vh;
+    background-color:#ffffff;
+    position: absolute;
+    top: 8vh;
+    bottom: 8vh;
+    right: 10vh + 480px;
+    left: 10vw;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+.RightSide{
+    width: 480px;
+    height:80vh;
+    display: flex;
+    position: absolute;
+    top: 8vh;
+    bottom: 8vh;
+    right: 10vw;
+    overflow: hidden
+}
+
+.Capa{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.PositionText{
+    margin-top: 10vh;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+.Title{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.Subtitle{
+    font-size: smaller;
+    color: rgb(141, 145, 148);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.Input{
+    width: 250px;
+    padding: 8px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-color: #f7f8f8;
+    border-style: ridge;
+    margin-top: 5px;
+}
+
+.Label{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.Check{
+    font-size: x-small;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    margin-top: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.ForgotPass{
+    font-size: x-small;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    position: relative;
+    left: 40px;
+}
+
+.BlackButton{
+    margin-top: 20px;
+    width: 270px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.GoogleButton{
+    margin-top: 10px;
+    width: 270px;
+    height: 35px;
+    border-radius: 8px;
+    border-color: white;
+}
+
+.Last{
+    font-size: x-small;
+    color: rgb(141, 145, 148);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.SignUp{
+    margin-left: 60px;
+    font-size: x-small;
+    font-weight: bold;
+}
