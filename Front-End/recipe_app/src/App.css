@@ -3,13 +3,12 @@ body{
     height: 100%;
     width: 100%;
     position: relative;
-    /*overflow: hidden;*/
 }
 
 
 .LeftSide{
-    width: 50vw;
-    height:80vh;
+    width: calc(80vw - 480px);
+    height: 80vh;
     background-color:#ffffff;
     position: absolute;
     top: 8vh;
@@ -18,6 +17,8 @@ body{
     left: 10vw;
     border-top-left-radius: 2%;
     border-bottom-left-radius: 2%;
+    text-align: center;
+
 }
 
 .RightSide{
@@ -28,7 +29,6 @@ body{
     top: 8vh;
     bottom: 8vh;
     right: 10vw;
-    overflow: hidden
 }
 
 .Capa{
@@ -39,10 +39,10 @@ body{
 }
 
 .PositionText{
-    margin-top: 10vh;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-    
+    margin-top: 20vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    display: inline-block;
 }
 
 .Title{
@@ -68,8 +68,8 @@ body{
 }
 
 .Label{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: x-small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
     font-weight: bold;
 }
 
@@ -101,6 +101,7 @@ body{
     background-color: black;
     color: white;
     border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .GoogleButton{
@@ -109,6 +110,9 @@ body{
     height: 35px;
     border-radius: 8px;
     border-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    border-color: #e5e7ed;
 }
 
 .Last{
@@ -122,4 +126,12 @@ body{
     margin-left: 60px;
     font-size: x-small;
     font-weight: bold;
+}
+
+.iconGoogle{
+    font-size: large;
+    margin-left: 10px;
+    position: fixed;
+    margin-top: 19px;
+    margin-left: 50px;
 }
