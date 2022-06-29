@@ -1,8 +1,8 @@
-package RecipeApp.RecipeApp.controllers;
+package RecipeApp.controllers;
 
-import RecipeApp.RecipeApp.Services.Services;
-import RecipeApp.RecipeApp.model.Recipe;
-import RecipeApp.RecipeApp.model.User;
+import RecipeApp.Services.Services;
+import RecipeApp.model.Recipe;
+import RecipeApp.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

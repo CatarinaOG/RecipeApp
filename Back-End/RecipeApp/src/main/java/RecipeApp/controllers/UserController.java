@@ -1,8 +1,8 @@
-package RecipeApp.RecipeApp.controllers;
+package RecipeApp.controllers;
 
-import RecipeApp.RecipeApp.Services.Services;
-import RecipeApp.RecipeApp.model.User;
-import RecipeApp.RecipeApp.repository.UserRepository;
+import RecipeApp.Services.Services;
+import RecipeApp.model.User;
+import RecipeApp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,6 +25,7 @@ public class UserController {
     public void persist(@RequestBody final User user){
         services.saveUser(user);
     }
+
 
 
 }

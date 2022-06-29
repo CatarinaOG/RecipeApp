@@ -1,4 +1,4 @@
-package RecipeApp.RecipeApp.model;
+package RecipeApp.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
