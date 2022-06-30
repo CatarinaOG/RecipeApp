@@ -1,5 +1,6 @@
 package RecipeApp.Services;
 
+import RecipeApp.model.LoginForm;
 import RecipeApp.model.Recipe;
 import RecipeApp.model.User;
 import RecipeApp.repository.RecipeRepository;
@@ -24,8 +25,18 @@ public class Services {
         return userRep.findAll();
     }
 
-    public void saveUser(User user){
-        userRep.save(user);
+    public boolean loginUser(LoginForm loginForm){
+
+        String username = loginForm.getUsername();
+        String password = loginForm.getPassword();
+
+        User user = userRep.getUser(username);
+
+        if(user == null) return false;
+
+        System.out.print("nome: "+user.getName() + " pass:"+user.getPassword());
+
+        return (user.getPassword().equals(password));
     }
 
     //------------------------------------------Recipe-------------------------------------------

@@ -1,8 +1,8 @@
 package RecipeApp.controllers;
 
 import RecipeApp.Services.Services;
+import RecipeApp.model.LoginForm;
 import RecipeApp.model.User;
-import RecipeApp.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,11 +21,14 @@ public class UserController {
         return services.findAll();
     }
 
-    @PostMapping(value = "/load")
-    public void persist(@RequestBody final User user){
-        services.saveUser(user);
-    }
 
+    @PostMapping(value = "/login")
+    @CrossOrigin
+    public String loginUser(@RequestBody final LoginForm loginForm){
+        boolean resp = services.loginUser(loginForm);
+
+        return "{ \"login\" : " + resp + "}";
+    }
 
 
 }

@@ -15,6 +15,23 @@ function App() {
 
   }
 
+  function handleClick(){
+
+    fetch('http://localhost:8080/user/login', {
+      method: 'POST', 
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(user)})
+    
+    .then(response => response.json)
+    .then(data => {
+      if(data.login){
+        console.log("login correto");
+      }
+    })
+
+    .catch(error => console.error("Error:",error));
+  }
+
 
 
 
@@ -36,7 +53,7 @@ function App() {
 
             <label className='ForgotPass'>Forgot password</label><br/>
             
-            <button className='BlackButton' >Sign In</button><br/>
+            <button className='BlackButton' onClick={handleClick} >Sign In</button><br/>
             
             <FcGoogle className='iconGoogle'/>
             <button className='GoogleButton'>Sign In With Google</button><br/>
